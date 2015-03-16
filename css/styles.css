@@ -1,0 +1,107 @@
+
+.navbar {
+	background-color: #339999;
+	border-color:#339999;
+	border-bottom:  solid #339999;
+}
+
+.navbar-default .navbar-brand {
+	color: #FFFFFF;
+}
+
+.navbar-default .navbar-brand:hover {
+	color: #FFFFFF;
+}
+
+.navbar-default 
+.navbar-toggle {
+    margin-top: 6px;
+    margin-right: 6px;
+    background: none;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    -ms-border-radius: 5em;
+    -o-border-radius: 5em;
+    border-radius: 5em;
+  }
+  
+  .navbar-default .navbar-toggle .icon-bar {
+  	background-color: #FFFFFF;
+  }
+  
+  .thumbnail {
+  	background: none;
+  }
+  
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+    background: none;
+    background: none;
+  }
+  
+.tp-arrow {
+	margin-top: 80px;
+}
+
+.icon-bar-symbol {
+	content: "\f0c9";
+}
+
+.tp-leftarrow {
+	z-index: 100;
+	cursor: pointer;
+	position: relative;
+	background: url(../img/large_left.png) no-repeat 0 0;
+	width: 40px;
+	height: 40px;
+}
+
+.tp-leftarrow:active,.tp-leftarrow:hover {
+	z-index: 100;
+	cursor: pointer;
+	position: relative;
+	background: url(../img/large_left.png) no-repeat 0 40;
+	width: 40px;
+	height: 40px;
+}
+
+.tp-rightarrow {
+	z-index: 100;
+	cursor: pointer;
+	position: relative;
+	background: url(../img/large_right.png) no-repeat 0 0;
+	width: 40px;
+	height: 40px;
+}
+
+.tp-rightarrow:active,.tp-rightarrow:hover {
+	z-index: 100;
+	cursor: pointer;
+	position: relative;
+	background: url(../img/large_right.png) no-repeat 0 40;
+	width: 40px;
+	height: 40px;
+}
+
+.mainView {
+	 background: #66cc99;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #66cc99 0%, #339999 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #66cc99), color-stop(100%, #339999));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #66cc99 0%, #339999 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #66cc99 0%, #339999 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #66cc99 0%, #339999 100%);
+  /* IE10+ */
+  background: linear-gradient(-45deg, #66cc99 0%, #339999 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66cc99, endColorstr=#339999, GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+
+}
+
