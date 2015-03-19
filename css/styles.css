@@ -86,6 +86,7 @@
 }
 
 .mainView {
+	height:100%;
 	 background: #66cc99;
   /* Old browsers */
   background: -moz-linear-gradient(-45deg, #66cc99 0%, #339999 100%);

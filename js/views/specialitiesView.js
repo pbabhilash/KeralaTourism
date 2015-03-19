@@ -1,9 +1,8 @@
 define([
 	'text!templates/tplHome.html',
 	'views/topBarView',
-	'views/aboutKeralaView',
 	'core'
-], function (template, HeaderView,AboutView, core) {
+], function (template, HeaderView, core) {
 
 	return Backbone.View.extend({
 
@@ -26,13 +25,7 @@ define([
         },
          linkClicked: function (e) {
             var key = $(e.currentTarget).attr('data-key');
-            
-            var view;
-            if(key === "about"){
-                view = new AboutView();
-            }
-            
-            view.render();
+            alert(key);
         }
 
 	});
