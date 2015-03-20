@@ -19,8 +19,8 @@ define([
 		   var output = core.translate(template);
 		   this.$el.html(output);
 		   
-		   var headerView = new HeaderView({ el: $('.topBar')});
-           headerView.render();
+		  // var headerView = new HeaderView({ el: $('.topBar')});
+           //headerView.render();
 		},
 		
 		events:{
