@@ -1,0 +1,59 @@
+{
+    "states": [
+        {
+            "name": "Thiruvananthapuram",
+            "totalPlaces": 7,
+            "places": [
+                {
+                    "placeName": "KappadBeach",
+                    "description": "It is beautiful",
+                    "imageUrl": ""
+                }, {
+                    "placeName": "Lokanar Kavu",
+                    "description": "It is beautiful",
+                    "imageUrl": ""
+                }, {
+                    "placeName": "Payyambalam Beach",
+                    "description": "It is beautiful",
+                    "imageUrl": ""
+                }, {
+                    "placeName": "Thalassery",
+                    "description": "It is beautiful",
+                    "imageUrl": ""
+                }
+            ]
+        }, {
+            "name": "Kollam",
+            "totalPlaces": 2,
+            "places": [
+                {
+                    "placeName": "check1",
+                    "description": "It is beautiful",
+                    "imageUrl": ""
+                }, {
+                    "placeName": "check 2",
+                    "description": "It is beautiful",
+                    "imageUrl": ""
+                }, {
+                    "placeName": "Payyambalam Beach",
+                    "description": "It is beautiful",
+                    "imageUrl": ""
+                }, {
+                    "placeName": "Thalassery",
+                    "description": "It is beautiful",
+                    "imageUrl": ""
+                }
+            ]
+        }, {
+            "name": "Alappuzha",
+            "totalPlaces": 5
+        }, {
+            "name": "Pathanamthitta",
+            "totalPlaces": 12
+        }, {
+            "name": "Kottayam",
+            "totalPlaces": 12
+        }
+    ]
+}
+

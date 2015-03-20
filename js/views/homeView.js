@@ -2,8 +2,10 @@ define([
 	'text!templates/tplHome.html',
 	'views/topBarView',
 	'views/aboutKeralaView',
+	'views/destinationsView',
+	'collections/states',
 	'core'
-], function (template, HeaderView,AboutView, core) {
+], function (template, HeaderView,AboutView, Destination, States, core) {
 
 	return Backbone.View.extend({
 
@@ -30,6 +32,12 @@ define([
             var view;
             if(key === "about"){
                 view = new AboutView();
+            }else if(key === "destinations"){
+                var states = new States();
+              
+                states.fetch({async:false});
+                
+                view = new Destination({collection:states});
             }
             
             view.render();

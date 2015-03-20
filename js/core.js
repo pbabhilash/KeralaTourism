@@ -9,9 +9,8 @@ define([
 	 * handlebars or mustache
 	 */
 	_.templateSettings = {
-		evaluate: /{{([\s\S]+?)}}/g,
-		interpolate: /{{=([\s\S]+?)}}/g,
-		escape: /{{-([\s\S]+?)}}/g
+		interpolate : /\{\{(.+?)\}\}/g,
+        evaluate:  /<%([\s\S]+?)%>/g
 	};
 
 	/**
@@ -50,8 +49,8 @@ define([
 	 * @type {Object}
 	 */
 	var translateTemplateSettings = {
-		evaluate: /{{{([\s\S]+?)}}}/g,
-		interpolate: /{{{=([\s\S]+?)}}}/g
+		interpolate : /\{\{(.+?)\}\}/g,
+        evaluate:  /<%([\s\S]+?)%>/g
 	};
 
 	/**

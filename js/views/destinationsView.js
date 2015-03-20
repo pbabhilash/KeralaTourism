@@ -1,33 +1,26 @@
 define([
-	'text!templates/tplHome.html',
-	'views/topBarView',
-	'core'
-], function (template, HeaderView, core) {
+    'text!templates/tplDestinations.html',
+    'core'
+], function (template, core) {
 
-	return Backbone.View.extend({
+    return Backbone.View.extend({
 
-		el: '',
-		
+        el: '#main-container',
+        
 
-		initialize: function () {},
+        initialize: function () {},
 
-		render: function () {
-		   
-		   var output = core.translate(template);
-		   this.$el.html(output);
-		   
-		   var headerView = new HeaderView({ el: $('.topBar')});
-           headerView.render();
-		},
-		
-		events:{
-         'click .dashBoardItem' : 'linkClicked'   
+        render: function () {
+           
+           var output = core.translate(template, {collections:this.collection});
+           this.$el.html(output);
+
         },
-         linkClicked: function (e) {
-            var key = $(e.currentTarget).attr('data-key');
-            alert(key);
+        
+        events:{
+            
         }
 
-	});
+    });
 
 });

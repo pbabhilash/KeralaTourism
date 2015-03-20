@@ -1,0 +1,46 @@
+<div class="panel-group" id="accordion">
+    
+    <%collections.each(function (Places) {%>
+    <div class="panel" id="panel1">
+        <div class="panel-heading">
+            <h4 class="panel-title"><a data-toggle="collapse" data-target="#{{Places.get('name')}}"
+            href="#collapseOne"> {{Places.get('name')}} <span class="badge" style="float: right">{{Places.get('totalPlaces')}}</span> </a></h4>
+
+        </div>
+        <div id="{{Places.get('name')}}" class="panel-collapse collapse">
+            <div class="panel-body">
+
+               <%_.each(Places.get("places"), function (Place) {%>
+                <div class="container-fluid" style="background-color:#e8e8e8">
+                    <div class="container container-pad" id="property-listings">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+
+                                <!-- Begin Listing: 704 SAINT GEORGES ST-->
+                                <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
+                                    <div class="media">
+                                        <a class="pull-left" href="#" target="_parent"> <img alt="image" class="img-responsive" src="http://images.prd.mris.com/image/V2/1/7IZk2HTN0AcHnIb7VCvisTUc3kTbn0UyHQlVAlwkNLM3_8UNN8pcgy9u6KVNoRGGH_kdUlpYehdbqzctRNUebg.jpg"></a>
+
+                                        <div class="clearfix visible-sm"></div>
+
+                                        <div class="media-body fnt-smaller">
+                                            <a href="#" target="_parent"></a>
+
+                                            <h4 class="media-heading"><a href="#" target="_parent">{{Place.placeName}} <small class="pull-right">12km</small></a></h4>
+                                        </div>
+                                    </div>
+                                </div><!-- End Listing-->
+
+                            </div>
+                        </div><!-- End row -->
+                    </div><!-- End container -->
+                </div>
+                
+                <%});%>
+
+            </div>
+        </div>
+    </div>
+<%});%>
+</div>
